@@ -1,0 +1,40 @@
+{
+    "hotCity":[
+    {"areaname":"太原市","areacode":"140100"},
+    {"areaname":"沈阳市","areacode":"210100"},
+    {"areaname":"长春市","areacode":"220100"},
+    {"areaname":"哈尔滨市","areacode":"230100"},
+    {"areaname":"上海市","areacode":"310100"},
+    {"areaname":"苏州市","areacode":"320500"},
+    {"areaname":"杭州市","areacode":"330100"}
+    ],
+    "cityList":[
+    {
+        "name":"A",
+        "city":[
+            {
+                "cityName":"安庆",
+                "cityCode":"101"
+            },
+           {
+                 "cityName":"安徽",
+                 "cityCode":"102"
+           }
+
+        ]
+    },
+       {
+            "name":"B",
+            "city":[
+                {
+                    "cityName":"北京",
+                    "cityCode":"103"
+                },
+               {
+                     "cityName":"巴西",
+                     "cityCode":"104"
+               }
+            ]
+        }
+    ]
+}

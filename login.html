@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+<title>登录</title>
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/handlebars/handlebars-3.0.3.min.js"></script>
+<script src="bower_components/handlebars/helper.js"></script>
+</head>
+<body>
+    <form action="financing-record.html" class="login-form">
+        <ul class="input-area">
+            <li class="clearfix">
+                <span class="input-icon"><img src="images/icon-user.png"/> </span>
+                <input type="text" name="username" class="m-text" placeholder="请输入您的账户"/>
+            </li>
+            <li class="clearfix">
+                <span class="input-icon"><img src="images/icon-pw.png"/> </span>
+                <input type="password" name="password" class="m-text" placeholder="请输入您的密码"/>
+            </li>
+        </ul>
+        <div class="form-btn-area">
+            <input class="m-btn m-btn-primary" type="submit" value="登录"/>
+            <div class="remember-pw">
+                <span class="switcher" style="margin-right:15px;">
+                    <input type="checkbox" id="switcher1" checked="checked" />
+                    <label for="switcher1" data-off="OFF" data-on="ON"></label>
+                </span>
+                <span class="text">记住密码</span>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

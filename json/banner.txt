@@ -1,0 +1,17 @@
+{
+    "list":[
+         {
+            "id":1,
+            "img":"images/banner/banner.jpg",
+            "title":"我要贷款",
+            "url":"financing.html"
+         },
+         {
+            "id":2,
+            "img":"images/banner/banner1.jpg",
+            "title":"我要贷款",
+             "url":"#"
+         }
+         
+    ]
+}

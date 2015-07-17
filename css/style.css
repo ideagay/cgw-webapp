@@ -1,0 +1,676 @@
+/*规范 begin*/
+
+/*黑色：#161616；*/
+/*深灰色：#666666；*/
+/*浅色：#9b9b9b；*/
+/*橙色：#f87d32；*/
+/*边框线：#bbb;*/
+
+/*规范 end*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 100%;
+    background-color: #e8e8e8;
+    color: #161616;
+    font-family: "Arial","Microsoft YaHei",SimHei,SimSun,sans-serif;
+}
+a:link {color: inherit}/* 未被访问的链接 */
+a:visited {color: inherit;text-decoration: none}/* 已被访问的链接 */
+a:hover {color: inherit;text-decoration: none}/* 鼠标指针移动到链接上 */
+a:active {color: inherit;text-decoration: none}/* 正在被点击的链接 */
+ul, ol {
+    list-style-type: none;
+}
+img{
+    width: 100%;
+}
+
+.text-overflow{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*主色 begin*/
+.main-color{
+    color: #ff8314;
+}
+/*主色 end*/
+.white-bg{
+    background-color: white;
+}
+/*自定义宽度100%按钮 begin*/
+.wideBtn{
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 1.8em;
+    font-weight: 400;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+}
+.wideBtn:hover{
+    color: white;
+}
+.wideBtn-cgw{
+    color: #fff;
+    background-color: #f87d32;
+    border-radius: 0;
+}
+.wideBtn-cgw:hover{
+    background-color: #ed7733;
+}
+/*自定义宽度100%按钮 end*/
+
+/*自定义登录，注册按钮 begin*/
+.m-btn{
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 1.8em;
+    font-weight: 400;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+}
+.m-btn.m-btn-primary{
+    color: white;
+    background-color:#f07a11 ;
+    border: 1px solid #ed5b0b ;
+    border-bottom: 3px solid #ed5b0b;
+    border-radius: 9px;
+
+}
+/*自定义登录，注册按钮 end*/
+
+/*固定到底部 begin*/
+.bottomFix{
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+}
+/*固定到底部 end*/
+
+/*模块组件，如热门车型等 begin*/
+.section-model{
+    background-color: white;
+    width: 100%;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+}
+.section-model .section-head{
+    font-size: 1.7em;
+    line-height: 2.3em;
+    border-bottom: 1px solid #ddd;
+    padding-left: 15px;
+}
+.section-model .section-body{
+
+}
+/*模块组件，如热门车型等 end*/
+
+/*banner begin*/
+.banner-wrap {
+    width: 100%;
+    position: relative;
+}
+.banner-wrap img{
+    width: 100%;
+}
+.banner-wrap .bannerTip{
+    position: absolute;
+    width: 85%;
+    background-color: white;
+    border-radius: 30px;
+    height: 3em;
+    line-height: 3em;
+    top:65%;
+    left: 50%;
+    margin-left: -43%;
+    text-align: center;
+    font-size: 1.3em;
+    color: #161616;
+    overflow: hidden;
+}
+.banner-wrap .bannerTip .tipCount{
+    font-size:2.1em;
+    color: #ff8314;
+}
+/*banner end*/
+
+/*选择爱车 begin*/
+.chooseCar .wideBtn{
+    font-size:2.1em;
+    color: white;
+}
+/*选择爱车 end*/
+
+/*车贷流程 begin*/
+.carStep{
+    border-top: none;
+}
+.carStep .section-body .step-item li{
+    margin: 1em 0 0.5em 0;
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.carStep .section-body .step-item li .img{
+    width: 100%;
+    background: url("../images/icon-arrow.png") no-repeat right center;
+    background-size: 10px auto;
+}
+.carStep .section-body .step-item li:last-child .img{
+    background: none;
+}
+.carStep .section-body .step-item .text{
+    margin: 0.8em 0 0 0;
+}
+.carStep .section-body .step-item .text-m{
+    font-size: 1.3em;
+}
+.carStep .section-body .step-item .text-s{
+    font-size: 0.9em;
+    color: #565656;
+}
+.carStep .section-body .step-item img{
+    width: 70%;
+}
+/*车贷流程 end*/
+
+/*热门车型 begin*/
+.hotCar{
+    border-bottom: 0;
+}
+.hotCar .list li{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    border-bottom: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+}
+.hotCar .list li .img{
+    width: 100%;
+    border: 0;
+    display: block;
+}
+.hotCar .list li .text{
+    margin-top: 10px;
+    text-align: center;
+}
+.hotCar .list li .text .name{
+    width: 100%;
+    height: 1.4em;
+    font-size: 1.4em;
+}
+.hotCar .list li .text .monthApply{
+    width: 100%;
+    height: 1.3em;
+    font-size: 1.3em;
+}
+.hotCar .list li .text .countPeople{
+    color:#565656;
+    width: 100%;
+    height: 1.3em;
+    font-size: 1.2em;
+}
+/*热门车型 end*/
+
+/*列表组 begin*/
+.listNav{
+    margin-top: 1em;
+    font-size: 1.5em;
+    color: #3c3c3c;
+}
+.listNav .m-select-li{
+    position: relative
+}
+.listNav .m-select-li .right-icon{
+    position: absolute;
+    right: 10px;
+    z-index: 99;
+    top:35%;
+}
+.listNav .list-group-item{
+    padding: 12px 15px;
+}
+.listNav label{
+    color: #9b9b9b;
+    font-weight: normal;
+    margin: 0;
+    width: 40%;
+}
+.listNav .m-text{
+    border: none;
+    outline: none;
+    float: right;
+    width: 60%;
+}
+.listNav .m-select{
+    border: none;
+    outline: none;
+    float: right;
+    background-color: transparent;
+    width:60%;
+}
+.listNav .m-select option{
+    text-align: right;
+}
+.listNav .m-text-sm{
+    width:25%;
+    line-height: 2em;
+}
+.listNav .list-group-item:first-child,.listNav .list-group-item:last-child{
+    border-radius: 0;
+}
+.listNav span{
+    color:#999;
+}
+
+.listNav .list-group-item-btn{
+    line-height: 2em;
+}
+/*列表组 end*/
+
+/*自定义从右滑入模态框组件 begin*/
+.h-modal{
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    width: 85%;
+    height: 100%;
+}
+.h-modal-backdrop{
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #4A4646;
+}
+.h-modal-open{
+    overflow: hidden;
+}
+/*自定义从右滑入模态框组件 end*/
+
+.sectionTitle{
+    padding: 0 1em
+}
+
+/*热门城市 begin*/
+.hotCity{
+    background-color: white;
+    width: 100%;
+    border-top:1px solid #dadada;
+    border-bottom:1px solid #dadada;
+    padding-bottom: 1em;
+}
+.hotCity li{
+    float: left;
+    width: 29%;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+.hotCity li a{
+    width: 100%;
+}
+/*热门城市 end*/
+
+/*城市列表 begin*/
+.cityList p{
+    padding-left: 0.5em;
+    margin-top: 1em;
+}
+.cityList li{
+    width: 100%;
+    border-top: 1px solid #dadada;
+    padding: 0 10% 0 3%;
+    background-color: white;
+}
+.cityList li a{
+    display: block;
+    height:4em;
+    line-height: 4em;
+}
+.cityList li:last-child{
+    border-bottom: 1px solid #dadada;
+}
+/*城市列表 end*/
+
+/*城市字母导航 begin*/
+.cityChar{
+    position: fixed;
+    z-index: 99;
+    top:50%;
+    right:5%;
+}
+.cityChar a{
+    color: #9b9b9b;
+}
+/*城市字母导航 end*/
+
+/*车品牌列表 begin*/
+.carList p{
+    font-size: 1.2em;
+    padding-left: 0.5em;
+    margin-top: 1em;
+    color: #808080;
+}
+.carList li{
+    width: 100%;
+    border-top: 1px solid #dadada;
+    padding: 0 10% 0 3%;
+    background-color: white;
+}
+.carList li a{
+    display: block;
+    height:4em;
+    line-height: 4em;
+    font-size: 1.5em;
+}
+.carList li:last-child{
+    border-bottom: 1px solid #dadada;
+}
+/*车品牌列表 end*/
+
+/*车品牌字母导航 begin*/
+.carChar{
+    position: fixed;
+    z-index: 99;
+    top:30%;
+    right:5%;
+}
+.carChar a{
+    font-size: 1.2em;
+    color: #9b9b9b;
+}
+/*车品牌字母导航 end*/
+
+/*汽车车型列表 begin*/
+.carsList{
+    background-color: #e8e8e8;
+    padding-top:5px;
+}
+.carsList li .carGroup{
+    padding-left: 15px;
+    color: #515151;;
+}
+.carsList li dl{
+    background-color: white;
+    margin: 0;
+}
+.carsList li dd{
+    padding: 10px;
+    border-bottom: 1px solid #d8d8d8;
+}
+.carsList li dd .img{
+    float: left;
+    width: 35%;
+}
+.carsList li dd .info{
+    float: left;
+    width: 65%;
+    padding-left: 10px;
+    border-left: 1px solid #d8d8d8;
+}
+.carsList li dd .name{
+  font-size: 1.3em;
+}
+.carsList li dd .main-color{
+    font-size: 1.1em;
+}
+
+/*汽车车型列表 end*/
+
+/*操作结果页面 begin*/
+.resultPage{
+    width: 90%;
+    padding: 30% 0;
+    margin: 0 auto;
+}
+.resultPage .result-info{
+    font-size: 2.1em;
+}
+.resultPage .more-info{
+    font-size: 1.4em;
+    color: #7c7c7c;
+}
+.icon-result{
+    width: 30px;
+    height: 30px;.
+}
+/*操作结果页面 end*/
+
+/*金融详情 begin*/
+.financialDetail{
+    width: 100%;
+}
+.financialDetail .financialDetail-head{
+    width: 100%;
+}
+/*金融详情 end*/
+
+/*登录页面 begin*/
+.login-form{
+    width: 100%;
+}
+.login-form .input-area{
+    margin-top: 2em;
+    border-top: 1px solid #bbbbbb;
+    width: 100%;
+}
+.login-form .input-area li{
+    background-color: white;
+    padding: 12px 15px;
+    border-bottom: 1px solid #bbbbbb;
+}
+.login-form  .input-area .input-icon{
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+.login-form  .input-area .m-text{
+    width:80%;
+    float: right;
+    height: 2em;
+    line-height:2em;
+    border: 0;
+    outline: 0;
+    color: #9b9b9b;
+    font-size: 1.4em;
+}
+.login-form .m-btn{
+    margin-bottom: 0.8em;
+}
+.login-form .form-btn-area{
+    margin: 4em auto;
+    width: 85%;
+}
+.remember-pw .text{
+    font-size: 1.5em;
+    line-height: 25px;
+}
+/*登录页面 end*/
+
+/* Swipe 2 required styles */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    height: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* END required styles */
+
+/*switcher*/
+.switcher label {
+    width:50px;
+    height: 25px;
+    border-radius:24px;
+    display: inline-block;
+    position: relative;
+    background-color: #dadada;
+    box-shadow: inset 0 2px 3px 0 rgba(20,20,20,0.3);
+    cursor: pointer;
+    transition:background-size 500ms ease;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.switcher label:before {
+    content: "|||";
+    display: block;
+    position: absolute;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: rgb(228,228,228);
+    text-shadow:1px 0 0 #fff;
+    left: 1px;
+    top:2px;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: white;
+    transition:left 300ms ease;
+}
+.switcher label:after {
+    content: attr(data-off);
+    line-height: 27px;
+    text-indent: 25px;
+    font-size: 12px;
+    color: #fff;
+    display: inline-block;
+    transform:scale(0.84);
+}
+.switcher input:checked + label {
+    background-color: #f07a11;
+}
+.switcher input:checked + label:before {
+    left: 29px;
+}
+.switcher input:checked + label:after {
+    content:attr(data-on);text-indent: 10px;
+}
+.switcher input {
+    display: none;
+}
+/* Swipe 2 required styles */
+
+/*顶部导航 begin*/
+.pageHeader{
+    width: 100%;
+    padding: 12px 15px;
+    background-color:#f87c32;
+    color: white;
+    text-align: center;
+    font-size: 1.8em;
+}
+.pageHeader .quit{
+    font-size: 15px;
+}
+/*顶部导航 end*/
+
+/*申请记录列表 begin*/
+.color-black{
+    color:#161616;
+}
+.color-gray{
+    color:#666;
+}
+.financing-record-list{
+    width: 100%;
+}
+.financing-record-list li{
+    line-height: 2em;
+    background-color: white;
+    width: 100%;
+    margin-top: 2em;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+.financing-record-list .list-header{
+    font-size: 1.5em;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+.financing-record-list .list-header .date{
+    font-size: 1.2rem;
+    text-align: right;
+    line-height: 2em;
+}
+.financing-record-list .list-item{
+    font-size: 1.5em;
+}
+.financing-record-list .list-item .items{
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+}
+.financing-record-list .list-item .items:last-child{
+    border-bottom:none;
+}
+.financing-record-list .list-item .items .items-s{
+    font-size: 1.2rem;
+    margin-top: 1em;
+}
+.financing-record-list .status{
+    vertical-align: middle;
+}
+.financing-record-list .status img{
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+.financing-record-list .status.spz{
+    color: #f55418;
+    vertical-align: middle;
+}
+.financing-record-list .status.fkz{
+    color: #00bfef;
+    vertical-align: middle;
+}
+.financing-record-list .status.yfk{
+    color: #00b51a;
+    vertical-align: middle;
+}
+.financing-record-list .status.wtg{
+    color: #999999;
+    vertical-align: middle;
+}
+.financing-record-list .items-more{
+    font-size: 1.3rem;
+    letter-spacing:-0.1rem
+}
+/*申请记录列表 end*/

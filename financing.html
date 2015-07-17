@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+<title>贷款申请</title>
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/handlebars/handlebars-3.0.3.min.js"></script>
+<script src="bower_components/handlebars/helper.js"></script>
+<script src="js/page/index.js"></script>
+</head>
+<body>
+<form action="financing-success.html">
+    <div class="listNav">
+        <div class="list-group">
+            <li class="list-group-item clearfix"><label>姓名</label><input type="text" name="username" class="m-text" required="required" /></li>
+            <li class="list-group-item m-select-li clearfix"><label>证件类型</label>
+                <select class="m-select">
+                    <option value="">请选择</option>
+                    <option value="">身份证</option>
+                    <option value="">台胞证</option>
+                    <option value="">军人证</option>
+                </select>
+                <span class="glyphicon glyphicon-menu-right right-icon"></span>
+            </li>
+            <li class="list-group-item clearfix"><label>证件号码</label><input type="text" class="m-text"/></li>
+            <li class="list-group-item clearfix"><label>计划贷款金额</label><input type="text" class="m-text" value="11.7万"/></li>
+            <li class="list-group-item clearfix"><label>月收入</label><input type="text" class="m-text"/></li>
+            <li class="list-group-item clearfix"><label>手机号码</label><input type="tel" class="m-text"/></li>
+            <li class="list-group-item clearfix list-group-item-btn"><label>验证码</label>
+                <span class="pull-right"><a href="" class="btn btn-default">获取验证码</a> </span>
+                <input type="text" class="m-text m-text-sm"/>
+            </li>
+        </div>
+    </div>
+    <div class="listNav" style="margin-bottom: 5em">
+        <div class="list-group">
+            <li class="list-group-item"><label>推荐人手机号</label><input type="tel" class="m-text"/></li>
+        </div>
+    </div>
+    <input type="submit" value="申请贷款" class="wideBtn wideBtn-cgw bottomFix"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+    "carList":[
+    {
+        "name":"A",
+        "cars":[
+            {
+                "carName":"奥迪",
+                "carCode":"101"
+            },
+           {
+                 "carName":"阿斯顿马丁",
+                 "carCode":"102"
+           }
+
+        ]
+    },
+       {
+            "name":"B",
+            "cars":[
+                {
+                    "carName":"巴博斯",
+                    "carCode":"103"
+                },
+               {
+                     "carName":"宝俊",
+                     "carCode":"104"
+               }
+            ]
+        }
+    ]
+}
