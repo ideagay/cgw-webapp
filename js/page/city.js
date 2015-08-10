@@ -18,13 +18,13 @@
                 var cityChar="";
                 var cityList=data.cityList;
                 $.each(hotCity,function(){
-                    hotCityGroup+="<li><a href=''class='btn btn-default' href='#' role='button'>"+this.areaname+"</a></li>"
+                    hotCityGroup+="<li><a href='financing-detail.html'class='btn btn-default' href='#' role='button'>"+this.areaname+"</a></li>"
                 });
                 $.each(cityList,function(){
                     cityGroup+="<ul><p id="+this.name+">"+this.name+"</p>";
                     cityChar+="<li><a href='#"+this.name+"'>"+this.name+"</a>";
                     $.each(this.city,function(){
-                        cityGroup+="<li><a href=''>"+this.cityName+"</a></li>";
+                        cityGroup+="<li><a href='financing-detail.html'>"+this.cityName+"</a></li>";
                     });
                     cityGroup+="</ul>"
                 });

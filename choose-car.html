@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -7,13 +8,6 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/handlebars/handlebars-3.0.3.min.js"></script>
-    <script src="bower_components/handlebars/helper.js"></script>
-    <script src="bower_components/swipe/swiper3.08.jquery.min.js"></script>
-    <script src="js/common/common.js"></script>
-    <script src="js/page/cars.js"></script>
 </head>
 <body>
 <!--车品牌列表 begin-->
@@ -29,7 +23,7 @@
 <!--车品牌字母列表 end-->
 
 
-<!--自定义从右滑入模态框 begin-->
+<!--自定义从右滑入模态框选车型 begin-->
 <div class="h-modal" id="carModal" style="right:-85% ">
     <div class="h-modal-content swiper-container ">
             <div class="swiper-wrapper">
@@ -40,7 +34,7 @@
                                     <h4 class="carGroup">一汽-大众奥迪</h4>
                                     <dl>
                                         <dd class="clearfix">
-                                            <a href="">
+                                            <a href="financing-detail.html">
                                                 <div class="img">
                                                     <img src="images/cars/car-pic1.png"/>
                                                 </div>
@@ -51,34 +45,7 @@
                                             </a>
                                         </dd>
                                         <dd class="clearfix">
-                                            <a href="">
-                                                <div class="img">
-                                                    <img src="images/cars/car-pic1.png"/>
-                                                </div>
-                                                <div class="info">
-                                                    <div class="name">奥迪A1</div>
-                                                    <div class="main-color">18.01-30-.14万元</div>
-                                                </div>
-                                            </a>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <h4 class="carGroup">一汽-大众奥迪</h4>
-                                    <dl>
-                                        <dd class="clearfix">
-                                            <a href="">
-                                                <div class="img">
-                                                    <img src="images/cars/car-pic1.png"/>
-                                                </div>
-                                                <div class="info">
-                                                    <div class="name">奥迪A1</div>
-                                                    <div class="main-color">18.01-30-.14万元</div>
-                                                </div>
-                                            </a>
-                                        </dd>
-                                        <dd class="clearfix">
-                                            <a href="">
+                                            <a href="financing-detail.html">
                                                 <div class="img">
                                                     <img src="images/cars/car-pic1.png"/>
                                                 </div>
@@ -94,7 +61,7 @@
                                     <h4 class="carGroup">一汽-大众奥迪</h4>
                                     <dl>
                                         <dd class="clearfix">
-                                            <a href="">
+                                            <a href="financing-detail.html">
                                                 <div class="img">
                                                     <img src="images/cars/car-pic1.png"/>
                                                 </div>
@@ -105,7 +72,7 @@
                                             </a>
                                         </dd>
                                         <dd class="clearfix">
-                                            <a href="">
+                                            <a href="financing-detail.html">
                                                 <div class="img">
                                                     <img src="images/cars/car-pic1.png"/>
                                                 </div>
@@ -121,7 +88,7 @@
                                     <h4 class="carGroup">一汽-大众奥迪</h4>
                                     <dl>
                                         <dd class="clearfix">
-                                            <a href="">
+                                            <a href="financing-detail.html">
                                                 <div class="img">
                                                     <img src="images/cars/car-pic1.png"/>
                                                 </div>
@@ -132,7 +99,34 @@
                                             </a>
                                         </dd>
                                         <dd class="clearfix">
-                                            <a href="">
+                                            <a href="financing-detail.html">
+                                                <div class="img">
+                                                    <img src="images/cars/car-pic1.png"/>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="name">奥迪A1</div>
+                                                    <div class="main-color">18.01-30-.14万元</div>
+                                                </div>
+                                            </a>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <h4 class="carGroup">一汽-大众奥迪</h4>
+                                    <dl>
+                                        <dd class="clearfix">
+                                            <a href="financing-detail.html">
+                                                <div class="img">
+                                                    <img src="images/cars/car-pic1.png"/>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="name">奥迪A1</div>
+                                                    <div class="main-color">18.01-30-.14万元</div>
+                                                </div>
+                                            </a>
+                                        </dd>
+                                        <dd class="clearfix">
+                                            <a href="financing-detail.html">
                                                 <div class="img">
                                                     <img src="images/cars/car-pic1.png"/>
                                                 </div>
@@ -153,19 +147,17 @@
             </div>
     </div>
 </div>
-<!--自定义从右滑入模态框 end-->
+<!--自定义从右滑入模态框选车型 end-->
 
 <div class="h-modal-backdrop" style="display: none;"></div>
 
 <div style="height: 2000px;"></div>
-<script>
-//    var swiper = new Swiper('.swiper-container', {
-//        scrollbar: '.swiper-scrollbar',
-//        direction: 'vertical',
-//        slidesPerView: 'auto',
-//        mousewheelControl: true,
-//        freeMode: true
-//    });
-</script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/handlebars/handlebars-3.0.3.min.js"></script>
+<script src="bower_components/handlebars/helper.js"></script>
+<script src="bower_components/swipe/swiper3.08.jquery.min.js"></script>
+<script src="js/common/common.js"></script>
+<script src="js/page/cars.js"></script>
 </body>
 </html>

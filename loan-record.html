@@ -1,48 +1,42 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
-<title>申请记录</title>
-<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/style.css">
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="bower_components/handlebars/handlebars-3.0.3.min.js"></script>
-<script src="bower_components/handlebars/helper.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+    <title>申请记录</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <!--头部导航 begin-->
 <header class="pageHeader clearfix">
-    <span class="glyphicon glyphicon-menu-left pull-left" onclick="history.go(-1)"></span>
+    <a href="index.html"><span class="glyphicon glyphicon-menu-left pull-left"> </span></a>
     申请记录
     <span class="pull-right quit"><a href="">退出</a></span>
 </header>
 <!--头部导航 end-->
-
 <!--申请记录列表 begin-->
-<ul class="financing-record-list">
-    <li class="">
-        <div class="row list-header">
+<ul class="financing-record-list ">
+    <li class="container-fluid">
+        <div class="list-header row">
             <div class="col-xs-8 text-overflow">
-                订单号：441429596501987
+                    订单号：441429596501987
             </div>
             <div class="col-xs-4 date text-overflow color-gray">
-                2015-5-21
+                    2015-5-21
             </div>
         </div>
         <div class="list-item">
-            <div class="items">
-                <div class="row">
-                    <div class="col-xs-8">
-                        <span>工商银行</span>&nbsp;&nbsp;
-                        <span class="color-gray">好车贷</span>
-                    </div>
-                    <div class="col-xs-4 text-right">
-                        杭州市
-                    </div>
+            <div class="items row">
+                <div class="col-xs-8">
+                    <span>工商银行</span>&nbsp;&nbsp;
+                    <span class="color-gray">好车贷</span>
                 </div>
-                <div class="row items-s">
+                <div class="col-xs-4 text-right">
+                    杭州市
+                </div>
+                <div class="items-s">
                     <div class="col-xs-8">
                         现代ix25 1.6L GSMT手动时尚型
                     </div>
@@ -67,8 +61,8 @@
             </div>
         </div>
     </li>
-    <li class="">
-        <div class="row list-header">
+    <li class="container-fluid">
+        <div class="list-header row">
             <div class="col-xs-8 text-overflow">
                 订单号：441429596501987
             </div>
@@ -77,62 +71,15 @@
             </div>
         </div>
         <div class="list-item">
-            <div class="items">
-                <div class="row">
-                    <div class="col-xs-8">
-                        <span>工商银行</span>&nbsp;&nbsp;
-                        <span class="color-gray">好车贷</span>
-                    </div>
-                    <div class="col-xs-4 text-right">
-                        杭州市
-                    </div>
+            <div class="items row">
+                <div class="col-xs-8">
+                    <span>工商银行</span>&nbsp;&nbsp;
+                    <span class="color-gray">好车贷</span>
                 </div>
-                <div class="row items-s">
-                    <div class="col-xs-8">
-                        现代ix25 1.6L GSMT手动时尚型
-                    </div>
-                    <div class="col-xs-4 text-right status fkz">
-                        <img src="images/fkz.png"/> 放款中
-                    </div>
+                <div class="col-xs-4 text-right">
+                    杭州市
                 </div>
-            </div>
-            <div class="items items-more">
-                <div class="row">
-                    <div class="col-xs-3 color-gray">贷款额</div>
-                    <div class="col-xs-3 color-gray">首付比例</div>
-                    <div class="col-xs-3 color-gray">期限</div>
-                    <div class="col-xs-3 color-gray">月供</div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-3 color-gray"><span class="color-black">14.26</span>万</div>
-                    <div class="col-xs-3 color-gray">30%</div>
-                    <div class="col-xs-3 color-gray">36期</div>
-                    <div class="col-xs-3 color-gray"><span class="main-color">12344</span>元</div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li class="">
-        <div class="row list-header">
-            <div class="col-xs-8 text-overflow">
-                订单号：441429596501987
-            </div>
-            <div class="col-xs-4 date text-overflow color-gray">
-                2015-5-21
-            </div>
-        </div>
-        <div class="list-item">
-            <div class="items">
-                <div class="row">
-                    <div class="col-xs-8">
-                        <span>工商银行</span>&nbsp;&nbsp;
-                        <span class="color-gray">好车贷</span>
-                    </div>
-                    <div class="col-xs-4 text-right">
-                        杭州市
-                    </div>
-                </div>
-                <div class="row items-s">
+                <div class="items-s">
                     <div class="col-xs-8">
                         现代ix25 1.6L GSMT手动时尚型
                     </div>
@@ -157,8 +104,8 @@
             </div>
         </div>
     </li>
-    <li class="">
-        <div class="row list-header">
+    <li class="container-fluid">
+        <div class="list-header row">
             <div class="col-xs-8 text-overflow">
                 订单号：441429596501987
             </div>
@@ -167,17 +114,58 @@
             </div>
         </div>
         <div class="list-item">
-            <div class="items">
-                <div class="row">
+            <div class="items row">
+                <div class="col-xs-8">
+                    <span>工商银行</span>&nbsp;&nbsp;
+                    <span class="color-gray">好车贷</span>
+                </div>
+                <div class="col-xs-4 text-right">
+                    杭州市
+                </div>
+                <div class="items-s">
                     <div class="col-xs-8">
-                        <span>工商银行</span>&nbsp;&nbsp;
-                        <span class="color-gray">好车贷</span>
+                        现代ix25 1.6L GSMT手动时尚型
                     </div>
-                    <div class="col-xs-4 text-right">
-                        杭州市
+                    <div class="col-xs-4 text-right status fkz">
+                        <img src="images/fkz.png"/> 放款中
                     </div>
                 </div>
-                <div class="row items-s">
+            </div>
+            <div class="items items-more">
+                <div class="row">
+                    <div class="col-xs-3 color-gray">贷款额</div>
+                    <div class="col-xs-3 color-gray">首付比例</div>
+                    <div class="col-xs-3 color-gray">期限</div>
+                    <div class="col-xs-3 color-gray">月供</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 color-gray"><span class="color-black">14.26</span>万</div>
+                    <div class="col-xs-3 color-gray">30%</div>
+                    <div class="col-xs-3 color-gray">36期</div>
+                    <div class="col-xs-3 color-gray"><span class="main-color">12344</span>元</div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="container-fluid">
+        <div class="list-header row">
+            <div class="col-xs-8 text-overflow">
+                订单号：441429596501987
+            </div>
+            <div class="col-xs-4 date text-overflow color-gray">
+                2015-5-21
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="items row">
+                <div class="col-xs-8">
+                    <span>工商银行</span>&nbsp;&nbsp;
+                    <span class="color-gray">好车贷</span>
+                </div>
+                <div class="col-xs-4 text-right">
+                    杭州市
+                </div>
+                <div class="items-s">
                     <div class="col-xs-8">
                         现代ix25 1.6L GSMT手动时尚型
                     </div>
@@ -204,5 +192,9 @@
     </li>
 </ul>
 <!--申请记录列表 end-->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/handlebars/handlebars-3.0.3.min.js"></script>
+<script src="bower_components/handlebars/helper.js"></script>
 </body>
 </html>

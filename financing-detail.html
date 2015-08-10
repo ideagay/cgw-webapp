@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+    <title>金融产品详情</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--头部导航 begin-->
+<header class="pageHeader clearfix">
+    <span class="glyphicon glyphicon-menu-left pull-left" onclick="history.go(-1)"></span>
+    金融产品详情
+    <span class="pull-right quit"><a href="city.html">杭州&nbsp;<span class="glyphicon glyphicon-menu-down"></span></a></span>
+</header>
+<!--头部导航 end-->
+
+<!--金融产品详情 begin-->
+<div class="financing-detail">
+    <div class="header">
+        <img src="images/product-brand.png" class="product-brand"/> 中安金控<span class="color-gray">中安宝</span>
+    </div>
+    <div class="bodyer">
+        <div class="i-list-box">
+            <div class="i-main clearfix">
+                <a href="javascript:;" onclick="open_h_modal('#carModal')">
+                <div class="img">
+                    <img src="images/cars/car-pic1.png"/>
+                </div>
+                <div class="info">
+                        <div class="name">奥迪A1</div>
+                        <div class="type">2014款30TFSI时尚型</div>
+                        <div class="price"><span class="color-gray">参考成交价：</span><span class="main-color">19.98万</span></div>
+                </div>
+                </a>
+            </div>
+            <div class="i-list">
+                <ul class="clearfix">
+                    <li>
+                        <a href="javascript:;" onclick="open_h_modal('#paymentRatio')">
+                            <span class="item-1">首付比例</span><span class="item-2">30%</span><span class="glyphicon glyphicon-menu-right item-3"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" onclick="open_h_modal('#LoanPeriod')">
+                            <span  class="item-1">货款期限</span><span class="item-2">36期</span><span class="glyphicon glyphicon-menu-right item-3"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <span  class="item-1">总利息</span><span class="item-2">1.53万</span>
+                    </li>
+                    <li>
+                        <span  class="item-1">赚取</span><span class="item-2">1.8万</span>
+                    </li>
+                </ul>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <span class="color-light-gray">首付：</span>7.25万
+                        </div>
+                        <div class="col-xs-4">
+                            <span class="color-light-gray">贷款：</span>7.25万
+                        </div>
+                        <div class="col-xs-4">
+                            <span class="color-light-gray">月供：</span>7.25万
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="i-list-box">
+            <div class="i-info border-bottom">
+                    <p>总利息=1.53万</p>
+                    <p>赚取=1.80万(<span class="color-light-gray">贷款金额17.21万投放钱保姆理财赚取</span>)-1.53万(<span class="color-light-gray">总成本</span>)</p>
+            </div>
+            <div class="container-fluid">
+               <div class="i-list-icons row">
+                    <div class="col-xs-4">
+                        <img src="images/f-icon-1.png"/>急速审批
+                    </div>
+                    <div class="col-xs-4">
+                        <img src="images/f-icon-2.png"/>资料简便
+                    </div>
+                    <div class="col-xs-4">
+                        <img src="images/f-icon-3.png"/>可弹性贷款
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="i-list-box title">
+            贷款须知
+        </div>
+        <h5 class="title1">利率说明</h5>
+        <table class="m-table" border="0" cellpadding="0" cellspacing="0">
+            <colgroup>
+                <col width="45%"/>
+                <col width="25%"/>
+                <col width="30%"/>
+            </colgroup>
+            <tr>
+                <th>贷款期限（期/月）</th>
+                <th>月利率</th>
+                <th>促销月利率</th>
+            </tr>
+            <tr>
+                <td>12期</td>
+                <td>0.85%</td>
+                <td>0.00%</td>
+            </tr>
+            <tr>
+                <td>12期</td>
+                <td>0.85%</td>
+                <td>0.00%</td>
+            </tr>
+            <tr>
+                <td>12期</td>
+                <td>0.85%</td>
+                <td>0.00%</td>
+            </tr>
+        </table>
+        <h5 class="title1">申请条件</h5>
+        <div class="i-list-box">
+            <div class="i-info">
+                1、拥有有效身份证、具有完全民事能力的中国公民，或在中国境内连续居住一年以上（含一年）的港、澳、台居民及外国公民<br/>
+                2、年龄介于18周岁到60周岁之间<br/>
+                3、具有正当收入来源，具备还款能力<br/>
+                4、个人信用记录良好<br/>
+            </div>
+        </div>
+        <h5 class="title1">所需材料</h5>
+        <div class="i-list-box">
+            <div class="i-info">
+                1、汽车金融贷款申请表，该表需要您的本人亲笔签名<br/>
+                2、身份证复印件（外籍人士提供有效期内的护照复印件）<br/>
+                3、机动车辆驾驶证<br/>
+                4、收入证明（税单、银行卡、公司开具的收入证明或工资单）<br/>
+                5、房产证复印件/土地使用复印件/居住证明（本地房产证或购房合同，能证明居住的电费、水电费单等；租住房屋的 租赁合同，能证明居住电费、水费等；既无房产或租房合同的，能证明长期居住的证明）<br/>
+                6、银行流水<br/>
+                7、根据您的具体情况，提供其他相关材料<br/>
+            </div>
+        </div>
+    </div>
+</div>
+<a  class="wideBtn wideBtn-cgw bottomFix" href="loan-apply.html"/>立即申请</a>
+<!--金融产品详情 end-->
+
+<!--自定义从右滑入模态框选车型 begin-->
+<div class="h-modal" id="carModal" style="right:-85% ">
+    <div class="h-modal-content swiper-container ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="carsList carsList1">
+                    <ul>
+                        <li>
+                            <h4 class="carGroup">2014款飞度</h4>
+                            <dl>
+                                <dd>
+                                    <a href="">
+                                        <div class="name">1.5L手动XL舒适版</div>
+                                        <div class="clearfix detail"><span class="color-light-gray">1.5L 手动档</span><span class="pull-right main-color">7.38万</span></div>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="">
+                                        <div class="name">1.5L手动XL舒适版</div>
+                                        <div class="clearfix detail"><span class="color-light-gray">1.5L 手动档</span><span class="pull-right main-color">7.38万</span></div>
+                                    </a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <h4 class="carGroup">2014款飞度</h4>
+                            <dl>
+                                <dd>
+                                    <a href="">
+                                        <div class="name">1.5L手动XL舒适版</div>
+                                        <div class="clearfix detail"><span class="color-light-gray">1.5L 手动档</span><span class="pull-right main-color">7.38万</span></div>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="">
+                                        <div class="name">1.5L手动XL舒适版</div>
+                                        <div class="clearfix detail"><span class="color-light-gray">1.5L 手动档</span><span class="pull-right main-color">7.38万</span></div>
+                                    </a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <h4 class="carGroup">2014款飞度</h4>
+                            <dl>
+                                <dd>
+                                    <a href="">
+                                        <div class="name">1.5L手动XL舒适版</div>
+                                        <div class="clearfix detail"><span class="color-light-gray">1.5L 手动档</span><span class="pull-right main-color">7.38万</span></div>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="">
+                                        <div class="name">1.5L手动XL舒适版</div>
+                                        <div class="clearfix detail"><span class="color-light-gray">1.5L 手动档</span><span class="pull-right main-color">7.38万</span></div>
+                                    </a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <h4 class="carGroup">2014款飞度</h4>
+                            <dl>
+                                <dd>
+                                    <a href="">
+                                        <div class="name">1.5L手动XL舒适版</div>
+                                        <div class="clearfix detail"><span class="color-light-gray">1.5L 手动档</span><span class="pull-right main-color">7.38万</span></div>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="">
+                                        <div class="name">1.5L手动XL舒适版</div>
+                                        <div class="clearfix detail"><span class="color-light-gray">1.5L 手动档</span><span class="pull-right main-color">7.38万</span></div>
+                                    </a>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Add Scroll Bar -->
+        <div class="swiper-scrollbar" >
+        </div>
+    </div>
+</div>
+<!--自定义从右滑入模态框选车型 end-->
+
+<!--自定义从右滑入模态框首付比例 begin-->
+<div class="h-modal" id="paymentRatio" style="right:-85% ">
+    <div class="h-modal-content swiper-container ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <ul class="m-list-group">
+                    <li><a href="">30%</a> </li>
+                    <li><a href="">40%</a> </li>
+                    <li><a href="">50%</a> </li>
+                    <li><a href="">60%</a> </li>
+                    <li><a href="">70%</a> </li>
+                    <li><a href="">80%</a> </li>
+                    <li><a href="">90%</a> </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Add Scroll Bar -->
+        <div class="swiper-scrollbar" >
+        </div>
+    </div>
+</div>
+<!--自定义从右滑入模态框首付比例 end-->
+
+<!--自定义从右滑入模态框贷款期限 begin-->
+<div class="h-modal" id="LoanPeriod" style="right:-85% ">
+    <div class="h-modal-content swiper-container ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <ul class="m-list-group">
+                    <li><a href="">12期</a> </li>
+                    <li><a href="">24期</a> </li>
+                    <li><a href="">36期</a> </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Add Scroll Bar -->
+        <div class="swiper-scrollbar" >
+        </div>
+    </div>
+</div>
+<!--自定义从右滑入模态框贷款期限 end-->
+<div class="h-modal-backdrop" style="display: none;"></div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/handlebars/handlebars-3.0.3.min.js"></script>
+<script src="bower_components/handlebars/helper.js"></script>
+<script src="bower_components/swipe/swiper3.08.jquery.min.js"></script>
+<script src="bower_components/slip/min.slip.js"></script>
+<script src="js/common/common.js"></script>
+<script src="js/page/financing-detail.js"></script>
+<script>
+
+
+//    var slip=Slip(document.getElementById('carModal'), 'x').end(function () {
+//        $(".h-modal-backdrop").hide();
+//        $("#carModal").hide();;
+//        //$(".h-modal").animate({right:"-85%"},200);
+//        console.log("滑动结束");
+//    });
+</script>
+</body>
+</html>

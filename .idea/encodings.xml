@@ -4,6 +4,8 @@
     <file url="file://$PROJECT_DIR$/js/common/common.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/page/cars.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/page/city.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/page/index.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/page/loan-apply.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/json/cars.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/json/city.txt" charset="UTF-8" />
   </component>

@@ -19,7 +19,7 @@ $(function(){
                 carGroup+="<ul><p id="+this.name+">"+this.name+"</p>";  //车型品牌列表
                 carChar+="<li><a  href='#"+this.name+"'>"+this.name+"</a>";  //车型字母列表
                 $.each(this.cars,function(){
-                    carGroup+="<li><a onclick=\"open_h_modal('#carModal')\"; href='javascript:;'>"+this.carName+"</a></li>";
+                    carGroup+="<li> <a onclick=\"open_h_modal('#carModal')\"; href='javascript:;'><img src='images/brand-icon.png' class='brand'/>"+this.carName+"</a></li>";
                 });
                 carGroup+="</ul>"
             });
@@ -30,7 +30,7 @@ $(function(){
 
     $(".h-modal-backdrop").click(function(){
         $(this).hide();
-        $(".h-modal").animate({right:"-85%"},500,function(){
+        $(".h-modal").animate({right:"-85%"},200,function(){
 
         })
     })

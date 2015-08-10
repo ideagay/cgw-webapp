@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+    <title>贷款申请</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<form action="loan-result.html" id="loanApply" onsubmit="return validate_form(this)">
+    <div class="listNav">
+        <div class="list-group">
+            <li class="list-group-item clearfix"><label>姓名</label><input type="text" name="name" id="name" class="m-text" /></li>
+            <li class="list-group-item clearfix"><label>称谓</label><input type="radio" value="man" name="sex">&nbsp;先生&nbsp;&nbsp;&nbsp;<input type="radio" value="woman" name="sex">&nbsp;女士</li>
+            <li class="list-group-item m-select-li clearfix"><label>证件类型</label>
+                <select class="m-select" name="carType" id="carType">
+                    <option value="">请选择</option>
+                    <option value="1">身份证</option>
+                    <option value="2">台胞证</option>
+                    <option value="3">军人证</option>
+                </select>
+                <span class="glyphicon glyphicon-menu-right right-icon"></span>
+            </li>
+            <li class="list-group-item clearfix"><label>证件号码</label><input name="carID" id="carID" type="text" class="m-text"/></li>
+            <li class="list-group-item clearfix"><label>计划贷款金额</label><input name="loanMoney" id="loanMoney" type="text" class="m-text" value="11.7万"/></li>
+            <li class="list-group-item m-select-li clearfix"><label>月收入</label>
+                <select class="m-select" name="monthIncome" id="monthIncome">
+                    <option value="">请选择</option>
+                    <option value="1">3000以下</option>
+                    <option value="2">3000-5000</option>
+                    <option value="3">5000以上</option>
+                </select>
+                <span class="glyphicon glyphicon-menu-right right-icon"></span>
+            </li>
+            <li class="list-group-item clearfix"><label>手机号码</label><input name="phone" id="phone" type="tel" class="m-text"/></li>
+            <li class="list-group-item clearfix list-group-item-btn">
+                <label>验证码</label>
+                <input name="yzm" id="yzm" type="text" class="m-text m-text-sm pull-left"/>
+                <span class="pull-right"><a href="" class="m-btn m-btn-sm m-btn-default">获取验证码</a> </span>
+            </li>
+        </div>
+    </div>
+    <div class="listNav" style="margin-bottom: 5em">
+        <div class="list-group">
+            <li class="list-group-item clearfix"><label>推荐人手机号</label><input name="tjPhone" id="tjPhone" type="tel" class="m-text"/></li>
+        </div>
+    </div>
+    <input type="submit" value="申请贷款" class="wideBtn wideBtn-cgw bottomFix"/>
+</form>
+<div class="errorTip"></div>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/handlebars/handlebars-3.0.3.min.js"></script>
+<script src="bower_components/handlebars/helper.js"></script>
+<script src="bower_components/layer/layer.m.js"></script>
+<script src="js/page/loan-apply.js"></script>
+</body>
+</html>

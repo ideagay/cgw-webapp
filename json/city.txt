@@ -6,7 +6,9 @@
     {"areaname":"哈尔滨市","areacode":"230100"},
     {"areaname":"上海市","areacode":"310100"},
     {"areaname":"苏州市","areacode":"320500"},
-    {"areaname":"杭州市","areacode":"330100"}
+    {"areaname":"杭州市","areacode":"330100"},
+    {"areaname":"长春市","areacode":"220100"},
+    {"areaname":"哈尔滨市","areacode":"230100"}
     ],
     "cityList":[
     {

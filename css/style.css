@@ -25,11 +25,20 @@ a:hover {color: inherit;text-decoration: none}/* 鼠标指针移动到链接上 */
 a:active {color: inherit;text-decoration: none}/* 正在被点击的链接 */
 ul, ol {
     list-style-type: none;
+    margin-bottom: 0;
 }
 img{
     width: 100%;
 }
-
+.color-black{
+    color:#161616;
+}
+.color-light-gray{
+    color:#9b9b9b;
+}
+.color-gray{
+    color:#666;
+}
 .text-overflow{
     overflow: hidden;
     text-overflow: ellipsis;
@@ -42,6 +51,9 @@ img{
 /*主色 end*/
 .white-bg{
     background-color: white;
+}
+.border-bottom{
+    border-bottom: 1px solid #dddddd;
 }
 /*自定义宽度100%按钮 begin*/
 .wideBtn{
@@ -65,7 +77,16 @@ img{
     background-image: none;
     border: 1px solid transparent;
 }
+.wideBtn:link{
+    color: white;
+}
+.wideBtn:visited{
+    color: white;
+}
 .wideBtn:hover{
+    color: white;
+}
+.wideBtn:active{
     color: white;
 }
 .wideBtn-cgw{
@@ -80,13 +101,9 @@ img{
 
 /*自定义登录，注册按钮 begin*/
 .m-btn{
-    width: 100%;
-    height: 3em;
-    line-height: 3em;
     text-align: center;
     display: inline-block;
     margin-bottom: 0;
-    font-size: 1.8em;
     font-weight: 400;
     white-space: nowrap;
     vertical-align: middle;
@@ -106,7 +123,21 @@ img{
     border: 1px solid #ed5b0b ;
     border-bottom: 3px solid #ed5b0b;
     border-radius: 9px;
-
+}
+.m-btn.m-btn-lg{
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+    font-size: 1.8em;
+}
+.m-btn.m-btn-sm{
+    padding: 5px 14px;
+}
+.m-btn.m-btn-default{
+    color:#404040;
+    background-color:#ebe8e8 ;
+    border-bottom: 3px solid #cecece;
+    border-radius: 9px;
 }
 /*自定义登录，注册按钮 end*/
 
@@ -114,15 +145,52 @@ img{
 .bottomFix{
     position: fixed;
     bottom: 0;
-    z-index: 9999;
+    z-index:1000;
 }
 /*固定到底部 end*/
+
+/*错误提示类 begin*/
+/*.errorTip{*/
+    /*background-color: #333;*/
+    /*width: 70%;*/
+    /*line-height: 2.5em;*/
+    /*text-align: center;*/
+    /*color: white;*/
+    /*font-size: 1.8em;*/
+    /*position: fixed;*/
+    /*left: 50%;*/
+    /*margin-left: -35%;*/
+    /*top:40%;*/
+    /*z-index: 9999999;*/
+    /*opacity: 0.8;*/
+    /*display: none;*/
+    /*border-radius: 9px;*/
+/*}*/
+/*.errorTip label{*/
+    /*font-weight: normal;*/
+    /*margin: 0;*/
+/*}*/
+/*错误提示类 end*/
+
+/*查看更多按钮 begin*/
+.btn-more{
+    width: 100%;
+    display: block;
+    background-color: #dff5f5;
+    border-bottom: 3px solid #d4e4e4;
+    padding: 12px 0;
+    text-align: center;
+    color: #9b9b9b;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+/*查看更多按钮 begin*/
 
 /*模块组件，如热门车型等 begin*/
 .section-model{
     background-color: white;
     width: 100%;
-    margin-bottom: 0.5em;
+    margin-bottom:1em;
     border-bottom: 1px solid #dddddd;
     border-top: 1px solid #dddddd;
 }
@@ -211,11 +279,15 @@ img{
     border-bottom: 0;
 }
 .hotCar .list li{
+    display: none;
     float: left;
     width: 50%;
     padding: 10px;
     border-bottom: 1px solid #d9d9d9;
     border-right: 1px solid #d9d9d9;
+}
+.hotCar .list li:nth-child(1),.hotCar .list li:nth-child(2) ,.hotCar .list li:nth-child(3) ,.hotCar .list li:nth-child(4){
+    display:block;
 }
 .hotCar .list li .img{
     width: 100%;
@@ -245,6 +317,8 @@ img{
 /*热门车型 end*/
 
 /*列表组 begin*/
+#loanApply{
+}
 .listNav{
     margin-top: 1em;
     font-size: 1.5em;
@@ -267,26 +341,29 @@ img{
     font-weight: normal;
     margin: 0;
     width: 40%;
+    float: left;
+}
+.listNav label.special{
+    line-height: 2.8em;
 }
 .listNav .m-text{
     border: none;
     outline: none;
-    float: right;
-    width: 60%;
+    float: left;
+    width: 58%;
 }
 .listNav .m-select{
     border: none;
     outline: none;
-    float: right;
-    background-color: transparent;
-    width:60%;
-}
-.listNav .m-select option{
-    text-align: right;
+    float:left;
+    background:none;
+    width:58%;
+    -webkit-appearance:none;
+    appearance:none;
 }
 .listNav .m-text-sm{
-    width:25%;
-    line-height: 2em;
+    width:20%;
+   margin-top: 10px;
 }
 .listNav .list-group-item:first-child,.listNav .list-group-item:last-child{
     border-radius: 0;
@@ -294,9 +371,8 @@ img{
 .listNav span{
     color:#999;
 }
-
-.listNav .list-group-item-btn{
-    line-height: 2em;
+.listNav .list-group-item-btn label{
+    margin-top: 10px;
 }
 /*列表组 end*/
 
@@ -307,6 +383,7 @@ img{
     top: 0;
     width: 85%;
     height: 100%;
+    background-color: white;
 }
 .h-modal-backdrop{
     opacity: 0.5;
@@ -333,7 +410,7 @@ img{
     width: 100%;
     border-top:1px solid #dadada;
     border-bottom:1px solid #dadada;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
 }
 .hotCity li{
     float: left;
@@ -348,19 +425,23 @@ img{
 
 /*城市列表 begin*/
 .cityList p{
-    padding-left: 0.5em;
-    margin-top: 1em;
+    padding-left:15px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    color: #9b9b9b;
 }
 .cityList li{
     width: 100%;
     border-top: 1px solid #dadada;
-    padding: 0 10% 0 3%;
+    padding: 0 10% 0 15px;
     background-color: white;
 }
 .cityList li a{
     display: block;
     height:4em;
     line-height: 4em;
+    font-size: 1.5em;
 }
 .cityList li:last-child{
     border-bottom: 1px solid #dadada;
@@ -375,16 +456,18 @@ img{
     right:5%;
 }
 .cityChar a{
+    font-size: 1.2em;
     color: #9b9b9b;
 }
 /*城市字母导航 end*/
 
 /*车品牌列表 begin*/
 .carList p{
+    padding-left:15px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
     font-size: 1.2em;
-    padding-left: 0.5em;
-    margin-top: 1em;
-    color: #808080;
+    color: #9b9b9b;
 }
 .carList li{
     width: 100%;
@@ -392,9 +475,15 @@ img{
     padding: 0 10% 0 3%;
     background-color: white;
 }
+.carList li img.brand{
+    width:32px;
+    height: 32px;
+    margin-right: 10px;
+}
 .carList li a{
-    display: block;
+    display:inline-block;
     height:4em;
+    width: 100%;
     line-height: 4em;
     font-size: 1.5em;
 }
@@ -428,6 +517,7 @@ img{
 .carsList li dl{
     background-color: white;
     margin: 0;
+    border-top: 1px solid #d8d8d8;
 }
 .carsList li dd{
     padding: 10px;
@@ -449,7 +539,12 @@ img{
 .carsList li dd .main-color{
     font-size: 1.1em;
 }
-
+.carsList li dd .name{
+    font-size: 1.5em;
+}
+.carsList1 li dd .detail{
+    font-size: 1.3em;
+}
 /*汽车车型列表 end*/
 
 /*操作结果页面 begin*/
@@ -600,30 +695,28 @@ img{
 }
 .pageHeader .quit{
     font-size: 15px;
+    margin-top: 4px;
 }
 /*顶部导航 end*/
 
 /*申请记录列表 begin*/
-.color-black{
-    color:#161616;
-}
-.color-gray{
-    color:#666;
-}
+
 .financing-record-list{
     width: 100%;
 }
 .financing-record-list li{
     line-height: 2em;
     background-color: white;
-    width: 100%;
     margin-top: 2em;
     border-bottom: 1px solid #ddd;
     border-top: 1px solid #ddd;
 }
+.financing-record-list li:last-child{
+    margin-bottom: 2em;
+}
 .financing-record-list .list-header{
     font-size: 1.5em;
-    padding: 12px 15px;
+    padding: 12px 0px;
     border-bottom: 1px solid #ddd;
 }
 .financing-record-list .list-header .date{
@@ -635,8 +728,9 @@ img{
     font-size: 1.5em;
 }
 .financing-record-list .list-item .items{
-    padding: 12px 15px;
+    padding: 12px 0px;
     border-bottom: 1px solid #dddddd;
+    line-height: 2em;
 }
 .financing-record-list .list-item .items:last-child{
     border-bottom:none;
@@ -674,3 +768,190 @@ img{
     letter-spacing:-0.1rem
 }
 /*申请记录列表 end*/
+
+/*贷款流程 begin*/
+.loan-guide-list{
+    margin-top: 1em;
+    font-size: 1.7em;
+    background-color: white;
+    border-top:1px solid #dddddd;
+    border-bottom:1px solid #dddddd;
+    padding-left: 15px;
+}
+.loan-guide-list ul{
+    margin-bottom: 0;
+}
+.loan-guide-list li{
+    padding: 12px 10px 12px 0;
+    border-bottom:1px solid #dddddd;
+}
+.loan-guide-list li:last-child{
+    border-bottom: none;
+}
+.loan-guide-list li a{
+    display: inline-block;
+    width: 80%;
+}
+.loan-guide-list li span{
+    color:#c5c5c5 ;
+}
+/*贷款流程 end*/
+
+/*贷款指南详情 begin*/
+.loan-guide-detail{
+    width: 90%;
+    margin: 0 auto;
+}
+.loan-guide-detail h3.title{
+    padding-left: 15px;
+    padding-bottom: 15px;
+    font-size: 1.7em;
+    border-bottom: 1px solid #dddddd;
+}
+.loan-guide-detail p{
+    font-size: 1.3em;
+    color: #666;
+    padding: 0 15px;
+}
+/*贷款指南详情 end*/
+
+/*金融产品详情 begin*/
+.financing-detail{
+    width: 100%;
+    margin-bottom: 7em;
+}
+.financing-detail .header{
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ddd;
+}
+.financing-detail .header span.color-gray{
+    margin-left: 10px;
+}
+.financing-detail .header .product-brand{
+    width: 27px;
+    height: 43px;
+    margin-right: 15px;
+}
+.financing-detail .bodyer{
+    width: 100%;
+}
+.financing-detail  .i-list-box{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1em;
+    background-color: white;
+}
+.financing-detail  .i-list-box.title{
+    font-size: 1.5em;
+    padding: 12px 15px;
+}
+.financing-detail .bodyer .i-main{
+    border-bottom: 1px solid #ddd;
+    padding: 10px 15px;
+}
+.financing-detail .bodyer .i-main .img{
+    width: 40%;
+    float: left;
+}
+.financing-detail .bodyer .i-main .info{
+    width: 60%;
+    float: left;
+    background: url("../images/icon-arrow.png") no-repeat right center;
+    background-size: 10px auto;
+}
+.financing-detail .bodyer .i-main .info .name{
+    font-size: 1.6em;
+}
+.financing-detail .bodyer .i-main .info .type{
+    font-size: 1.4em;
+}
+.financing-detail .bodyer .i-main .info .price .color-gray{
+    font-size: 1.2em;
+}
+.financing-detail .bodyer .i-main .info .price .main-color{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.financing-detail .bodyer .i-list li{
+    font-size: 1.4em;
+    width: 50%;
+    float: left;
+    padding: 12px 10px;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+.financing-detail .bodyer .i-list .item-1{
+    color: #9b9b9b;
+    width: 50%;
+    display: inline-block;
+}
+.financing-detail .bodyer .i-list .item-2{
+     width: 40%;
+     display: inline-block;
+ }
+.financing-detail .bodyer .i-list .item-3{
+    width: 10%;
+    display: inline-block;
+    color: #9b9b9b;
+}
+.financing-detail .bodyer .i-list .row{
+    font-size: 1.2em;
+    line-height: 3em;
+}
+.financing-detail .i-list-box .i-info{
+    padding: 12px 15px;
+    font-size: 1.4em;
+}
+.financing-detail .i-list-box .i-info p{
+    margin-bottom: 0;
+}
+.financing-detail .i-list-box .i-list-icons{
+    line-height: 3em;
+    font-size: 1.3em;
+    letter-spacing: -0.15em;
+}
+.financing-detail .i-list-box .i-list-icons img{
+    width: 20px;
+    height: 20px;
+}
+h5.title1{
+    padding:0 15px;
+    font-size: 1.4em;
+}
+/*金融产品详情 end*/
+
+/*通用表格组件 begin*/
+.m-table{
+    width: 100%;
+    border-top: 1px solid #dddddd;
+    font-size: 1.4em;
+    background-color: white;
+}
+.m-table td,.m-table th{
+    letter-spacing: -0.13em;
+    padding: 12px 15px;
+    text-align: center;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+/*通用表格组件 end*/
+
+/*自定义90%宽度列表组 begin*/
+.m-list-group{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+.m-list-group li{
+    border-bottom: 1px solid #dddddd;
+}
+.m-list-group li a{
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+}
+/*自定义90%宽度列表组 end*/
